@@ -73,13 +73,15 @@
 				0057C43F25ABDD0C0084BB22 /* ContentView.swift */,
 				0057C46125ABF3630084BB22 /* chinaLandmarkList.swift */,
 				0057C45025ABDD700084BB22 /* LandmarkDetail.swift */,
-				0057C44125ABDD0E0084BB22 /* Assets.xcassets */,
+				0057C4A225AC58F40084BB22 /* UIViews */,
+				0057C4A325AC591C0084BB22 /* Cell Views */,
+				0057C46725AC17610084BB22 /* model */,
+				0057C4A625AC59A70084BB22 /* Rescources */,
+				0057C4A525AC59840084BB22 /* Supporting Views */,
 				0057C44625ABDD0E0084BB22 /* LaunchScreen.storyboard */,
+				0057C44125ABDD0E0084BB22 /* Assets.xcassets */,
 				0057C44925ABDD0E0084BB22 /* Info.plist */,
 				0057C44325ABDD0E0084BB22 /* Preview Content */,
-				0057C46725AC17610084BB22 /* model */,
-				0057C45325ABE0070084BB22 /* LandmarkMapView.swift */,
-				0057C46425ABF3CD0084BB22 /* LandmarkCell.swift */,
 			);
 			path = ChianLandmark;
 			sourceTree = "<group>";
@@ -99,6 +101,36 @@
 				0057C46825AC17950084BB22 /* LandmarkData.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		0057C4A225AC58F40084BB22 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				0057C45325ABE0070084BB22 /* LandmarkMapView.swift */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		0057C4A325AC591C0084BB22 /* Cell Views */ = {
+			isa = PBXGroup;
+			children = (
+				0057C46425ABF3CD0084BB22 /* LandmarkCell.swift */,
+			);
+			path = "Cell Views";
+			sourceTree = "<group>";
+		};
+		0057C4A525AC59840084BB22 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		0057C4A625AC59A70084BB22 /* Rescources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rescources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

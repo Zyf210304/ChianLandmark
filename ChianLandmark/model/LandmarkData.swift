@@ -13,7 +13,7 @@ final class LandmarkData: ObservableObject{
 
     var didChange = PassthroughSubject<LandmarkData, Never>()
     
-    var userLandmarks = chinaLandmarks {
+    @Published var userLandmarks = chinaLandmarks {
         didSet{
             didChange.send(self)
         }

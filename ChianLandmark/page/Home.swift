@@ -27,6 +27,9 @@ struct Home: View {
                 PageVC()
                     .frame(height: 200)
                     .listRowInsets(EdgeInsets())
+                    .onAppear() {
+                        print("重新出现后 数据丢失")
+                    }
                 
                 ForEach(categories.keys.sorted(), id: \.self) { categoryName in
                     
@@ -64,9 +67,9 @@ struct Home: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
-    }
-}
+//struct Home_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Home()
+//    }
+//}
 

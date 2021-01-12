@@ -17,6 +17,7 @@ struct CategoryCell: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(categoryName)
+            
             ScrollView (.horizontal, showsIndicators: false){
                 
                 categoryScrollCell(landmarks: self.landmarks)
@@ -33,6 +34,7 @@ struct categoryScrollCell: View {
     var landmarks : [chinaLandmarkModel]
     
     var body: some View {
+        
         HStack(spacing: 15) {
             
             ForEach(landmarks) { landmark in
@@ -52,9 +54,7 @@ struct categoryScrollCell: View {
                             .foregroundColor(.primary)
                     }
                 }
-                
-                
-                
+
             }
             
         }

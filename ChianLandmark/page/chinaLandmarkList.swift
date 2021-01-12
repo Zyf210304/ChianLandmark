@@ -14,7 +14,7 @@ struct chinaLandmarkList: View {
     
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             List {
                 
                 Toggle(isOn: $isOnlyShowFavorite, label: {
@@ -35,9 +35,15 @@ struct chinaLandmarkList: View {
                    
                 }
             }
-            .navigationTitle(Text("地标"))
+            .navigationBarTitle(Text("地标") , displayMode: .inline) ///, displayMode: .inline
+//            .edgesIgnoringSafeArea(.all)
+                    //隐藏包括标题和返回键在内的所有系统导航栏
+//            .navigationBarHidden(true)
+                    //只隐藏系统导航栏中的返回键
+//            .navigationBarBackButtonHidden(true)
+//            .navigationBarTitle(Text("地标"), displayMode: .inline)
             
-        }
+//        }
         
     }
 

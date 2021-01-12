@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004878A225AD2EC500DD9CE1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004878A125AD2EC500DD9CE1 /* User.swift */; };
+		004878A625AD310800DD9CE1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004878A525AD310800DD9CE1 /* Profile.swift */; };
+		004878AA25AD4F9400DD9CE1 /* ProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004878A925AD4F9400DD9CE1 /* ProfileEdit.swift */; };
+		004878AD25AD54BF00DD9CE1 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004878AC25AD54BF00DD9CE1 /* PageVC.swift */; };
 		0057C43C25ABDD0C0084BB22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0057C43B25ABDD0C0084BB22 /* AppDelegate.swift */; };
 		0057C43E25ABDD0C0084BB22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0057C43D25ABDD0C0084BB22 /* SceneDelegate.swift */; };
 		0057C44025ABDD0C0084BB22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0057C43F25ABDD0C0084BB22 /* ContentView.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		004878A125AD2EC500DD9CE1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		004878A525AD310800DD9CE1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		004878A925AD4F9400DD9CE1 /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEdit.swift; sourceTree = "<group>"; };
+		004878AC25AD54BF00DD9CE1 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		0057C43825ABDD0C0084BB22 /* ChianLandmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChianLandmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0057C43B25ABDD0C0084BB22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0057C43D25ABDD0C0084BB22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004878A425AD309D00DD9CE1 /* Profile Views */ = {
+			isa = PBXGroup;
+			children = (
+				004878A525AD310800DD9CE1 /* Profile.swift */,
+				004878A925AD4F9400DD9CE1 /* ProfileEdit.swift */,
+			);
+			path = "Profile Views";
+			sourceTree = "<group>";
+		};
 		0057C42F25ABDD0B0084BB22 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +92,7 @@
 				0057C43B25ABDD0C0084BB22 /* AppDelegate.swift */,
 				0057C43D25ABDD0C0084BB22 /* SceneDelegate.swift */,
 				0210CC6E25AC7B2C00BB3A35 /* page */,
+				004878A425AD309D00DD9CE1 /* Profile Views */,
 				0057C4A225AC58F40084BB22 /* UIViews */,
 				0057C4A325AC591C0084BB22 /* Cell Views */,
 				0057C46725AC17610084BB22 /* model */,
@@ -99,6 +117,7 @@
 			children = (
 				0057C45C25ABEF5B0084BB22 /* chinaLandmarkModel.swift */,
 				0057C46825AC17950084BB22 /* LandmarkData.swift */,
+				004878A125AD2EC500DD9CE1 /* User.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -107,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				0057C45325ABE0070084BB22 /* LandmarkMapView.swift */,
+				004878AC25AD54BF00DD9CE1 /* PageVC.swift */,
 			);
 			path = UIViews;
 			sourceTree = "<group>";
@@ -202,13 +222,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0057C45125ABDD700084BB22 /* LandmarkDetail.swift in Sources */,
+				004878AD25AD54BF00DD9CE1 /* PageVC.swift in Sources */,
 				0057C46225ABF3630084BB22 /* chinaLandmarkList.swift in Sources */,
 				0210CC7025AC7B4700BB3A35 /* Home.swift in Sources */,
+				004878A625AD310800DD9CE1 /* Profile.swift in Sources */,
 				0057C43C25ABDD0C0084BB22 /* AppDelegate.swift in Sources */,
 				0057C43E25ABDD0C0084BB22 /* SceneDelegate.swift in Sources */,
 				0057C46925AC17950084BB22 /* LandmarkData.swift in Sources */,
 				0057C45D25ABEF5B0084BB22 /* chinaLandmarkModel.swift in Sources */,
 				0057C44025ABDD0C0084BB22 /* ContentView.swift in Sources */,
+				004878AA25AD4F9400DD9CE1 /* ProfileEdit.swift in Sources */,
+				004878A225AD2EC500DD9CE1 /* User.swift in Sources */,
 				0057C45425ABE0070084BB22 /* LandmarkMapView.swift in Sources */,
 				0057C46525ABF3CD0084BB22 /* LandmarkCell.swift in Sources */,
 				0210CC7425AC94AF00BB3A35 /* CategoryCell.swift in Sources */,
@@ -355,6 +379,7 @@
 				DEVELOPMENT_TEAM = BY3249U34V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChianLandmark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +401,7 @@
 				DEVELOPMENT_TEAM = BY3249U34V;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChianLandmark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

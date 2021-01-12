@@ -23,11 +23,9 @@ struct Home: View {
         NavigationView {
             
             List {
-                Image("lgd")
-                    .resizable()
-                    .scaledToFill()
+                
+                PageVC()
                     .frame(height: 200)
-                    .clipped()
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(categories.keys.sorted(), id: \.self) { categoryName in
@@ -41,6 +39,8 @@ struct Home: View {
                     destination: chinaLandmarkList()) {
                     Text("查看全部").font(.subheadline)
                 }
+                
+                
             }
             .navigationBarTitle(Text("精选"))
             .navigationBarItems(trailing:
@@ -50,15 +50,15 @@ struct Home: View {
                                     }, label: {
                                         Image(systemName: "person.circle.fill")
                                         .font(.title)
-                                        .foregroundColor(.blue)
                                         .sheet(isPresented: $isPresented, content: {
-                                            Text("1231231\n\n\n\n\n\nn\n123123")
+                                            Profile()
                                         })
                                     })
                                 
                                     
                                 
             )
+            
             
         }
     }
